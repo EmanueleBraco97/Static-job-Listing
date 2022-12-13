@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import Job from "./Job";
 import { JobContext } from "../context/JobContext";
+
+import "./JobList.css";
+
 function Jobs() {
   const { Data, filterKeyword } = useContext(JobContext);
   const [newData, setNewData] = useState([]);
@@ -27,11 +30,13 @@ function Jobs() {
   }, [filterKeyword, Data]);
 
   return (
-    <div className="jobs_container">
-      {newData.map((item) => {
-        return <Job key={item.id} {...item} New={item.new} />;
-      })}
-    </div>
+    <main style={{ backgroundColor: "#eef6f6", padding: "50px" }}>
+      <div className="jobs-container">
+        {newData.map((item) => {
+          return <Job key={item.id} {...item} New={item.new} />;
+        })}
+      </div>
+    </main>
   );
 }
 

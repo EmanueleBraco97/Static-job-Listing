@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { JobContext } from "../context/JobContext";
 
+import "./Job.css";
+
 const Job = ({
   id,
   company,
@@ -20,24 +22,31 @@ const Job = ({
   const tags = [role, level, ...languages, ...tools];
   return (
     <>
-      <div className={`${New && featured ? "job active" : "job"}`} key={id}>
-        <div className="jobContent">
-          <img src={logo} alt="company-logo" />
-          <div className="jobInfo">
-            <div className="companyInfoHeader">
-              <span>{company}</span>
-              {New && <button className="new">NEW!</button>}
-              {featured && <button className="feature">FEATURED</button>}
+      <div className={`job ${New && featured ? "job-active" : ""}`} key={id}>
+        <div className="job-content">
+          <img className="logo-photo" src={logo} alt="company-logo" />
+          <div className="job-info">
+            <div className="company-info-top">
+              <span className="title-logo">{company}</span>
+              {New && (
+                <div className="new">
+                  <span>NEW!</span>
+                </div>
+              )}
+              {featured && (
+                <div className="feature">
+                  <span>FEATURED</span>
+                </div>
+              )}
             </div>
-            <h1>{position}</h1>
-            <ul className="companyInfoFooter">
-              <li>{postedAt}</li>
-              <li>•</li>
-              <li>{contract}</li>
-              <li>•</li>
-              <li>{location}</li>
-            </ul>
-            <hr />
+            <span>{position}</span>
+            <div className="company-info-bottom">
+              <span>{postedAt}</span>
+              <span>•</span>
+              <span>{contract}</span>
+              <span>•</span>
+              <span>{location}</span>
+            </div>
           </div>
         </div>
         <div className="tag">

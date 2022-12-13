@@ -1,13 +1,7 @@
-// import "./Header.css";
-
-// const Header = () => {
-//   return <header id="header"></header>;
-// };
-
-// export default Header;
-
 import { useContext } from "react";
 import { JobContext } from "../../context/JobContext";
+
+import iconRemove from "../../images/icon-remove.svg";
 
 import "./Header.css";
 
@@ -23,7 +17,7 @@ const Header = () => {
               <div className="filter" key={id}>
                 <span>{tag}</span>
                 <img
-                  src="./images/icon-remove.svg"
+                  src={iconRemove}
                   alt="remove-icon"
                   onClick={() => RemoveKeyword(tag)}
                 />
