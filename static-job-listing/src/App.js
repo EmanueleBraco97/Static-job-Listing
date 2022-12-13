@@ -1,13 +1,15 @@
 import "./App.css";
+import JobList from "./components/JobList";
+import JobContext from "./context/JobContext";
 import Header from "./components/Header/Header";
-import Data from "../src/Data.js";
-import Jobs from "./components/Jobs";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Jobs Data={Data} />
+      <JobContext>
+        <Header />
+        <JobList />
+      </JobContext>
     </div>
   );
 }
