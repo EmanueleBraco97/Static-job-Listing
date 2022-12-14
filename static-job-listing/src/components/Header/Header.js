@@ -15,7 +15,7 @@ const Header = () => {
           {filterKeyword.map((tag, id) => {
             return (
               <div className="filter" key={id}>
-                <span>{tag}</span>
+                <button className="tag-key">{tag}</button>
                 <img
                   src={iconRemove}
                   alt="remove-icon"

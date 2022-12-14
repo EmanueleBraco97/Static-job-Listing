@@ -3,4 +3,18 @@
   height: 18vh;
   background-image: url("../../images/bg-header-desktop.svg");
   background-color: #5ba4a4;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  top: 103px;
+  left: 190px;
+  background-color: white;
+  width: 1135px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
 }

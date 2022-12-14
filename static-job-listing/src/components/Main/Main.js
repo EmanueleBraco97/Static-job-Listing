@@ -2,7 +2,11 @@ import "./Main.css";
 import JobList from "./JobList/JobList";
 
 const Main = () => {
-  return <JobList />;
+  return (
+    <main>
+      <JobList />
+    </main>
+  );
 };
 
 export default Main;
