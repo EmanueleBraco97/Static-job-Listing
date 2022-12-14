@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { JobContext } from "../context/JobContext";
+import { JobContext } from "../../../context/JobContext";
 
 import "./Job.css";
 
@@ -39,7 +39,7 @@ const Job = ({
                 </div>
               )}
             </div>
-            <span>{position}</span>
+            <span className="position">{position}</span>
             <div className="company-info-bottom">
               <span>{postedAt}</span>
               <span>•</span>
@@ -52,9 +52,13 @@ const Job = ({
         <div className="tag">
           {tags.map((tag, id) => {
             return (
-              <span key={id} onClick={() => AddKeyword(tag)}>
+              <button
+                className="tag-key"
+                key={id}
+                onClick={() => AddKeyword(tag)}
+              >
                 {tag}{" "}
-              </span>
+              </button>
             );
           })}
         </div>

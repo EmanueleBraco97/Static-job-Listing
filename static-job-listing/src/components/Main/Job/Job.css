@@ -47,6 +47,7 @@
 .title-logo {
   color: #5ba4a4;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .new {
@@ -72,4 +73,34 @@
   border-radius: 50px;
   background-color: black;
   color: white;
+}
+
+.position {
+  font-weight: 700;
+}
+
+.position:hover {
+  color: #5ba4a4;
+  cursor: pointer;
+}
+
+.tag {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+.tag-key {
+  background-color: #eef6f6;
+  border: none;
+  color: #5ba4a4;
+  font-weight: bold;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tag-key:hover {
+  color: white;
+  background-color: #5ba4a4;
 }

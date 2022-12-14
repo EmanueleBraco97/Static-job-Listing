@@ -1,14 +1,15 @@
 import "./App.css";
-import JobList from "./components/JobList";
+
 import JobContext from "./context/JobContext";
 import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App">
       <JobContext>
         <Header />
-        <JobList />
+        <Main />
       </JobContext>
     </div>
   );

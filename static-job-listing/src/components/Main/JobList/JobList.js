@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
-import Job from "./Job";
-import { JobContext } from "../context/JobContext";
+import Job from "../Job/Job";
+import { JobContext } from "../../../context/JobContext";
 
 import "./JobList.css";
 
@@ -30,13 +30,11 @@ function Jobs() {
   }, [filterKeyword, Data]);
 
   return (
-    <main style={{ backgroundColor: "#eef6f6", padding: "50px" }}>
-      <div className="jobs-container">
-        {newData.map((item) => {
-          return <Job key={item.id} {...item} New={item.new} />;
-        })}
-      </div>
-    </main>
+    <div className="jobs-container">
+      {newData.map((item) => {
+        return <Job key={item.id} {...item} New={item.new} />;
+      })}
+    </div>
   );
 }
 
