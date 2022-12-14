@@ -18,3 +18,41 @@
   justify-content: space-between;
   border-radius: 5px;
 }
+
+.filter_tags {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.remove-icon {
+  background-color: #5ba4a4;
+  color: white;
+  cursor: pointer;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.remove-icon:hover {
+  background-color: black;
+  color: white;
+}
+
+.clear {
+  background-color: transparent;
+  border-bottom: 2px solid #5ba4a4;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #5ba4a4;
+  font-weight: bold;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 50px;
+}

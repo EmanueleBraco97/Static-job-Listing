@@ -16,11 +16,14 @@ const Header = () => {
             return (
               <div className="filter" key={id}>
                 <button className="tag-key">{tag}</button>
-                <img
-                  src={iconRemove}
-                  alt="remove-icon"
-                  onClick={() => RemoveKeyword(tag)}
-                />
+                <div className="structure-remove-icon">
+                  <img
+                    className="remove-icon"
+                    src={iconRemove}
+                    alt="remove-icon"
+                    onClick={() => RemoveKeyword(tag)}
+                  />
+                </div>
               </div>
             );
           })}
