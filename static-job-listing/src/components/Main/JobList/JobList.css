@@ -5,3 +5,10 @@
   width: 80%;
   margin: 0 auto;
 }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .jobs-container {
+    width: 100%;
+    row-gap: 45px;
+  }
+}

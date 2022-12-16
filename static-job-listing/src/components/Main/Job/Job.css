@@ -104,3 +104,43 @@
   color: white;
   background-color: #5ba4a4;
 }
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .job {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 185px;
+  }
+
+  .job-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .logo-photo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: -50px;
+    left: 5px;
+  }
+
+  .job-info {
+    row-gap: 20px;
+  }
+
+  .divisor {
+    width: 100%;
+    background-color: gray;
+    height: 1px;
+  }
+
+  .tag {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0px;
+  }
+}

@@ -49,6 +49,7 @@ const Job = ({
             </div>
           </div>
         </div>
+        <div className="divisor"></div>
         <div className="tag">
           {tags.map((tag, id) => {
             return (
