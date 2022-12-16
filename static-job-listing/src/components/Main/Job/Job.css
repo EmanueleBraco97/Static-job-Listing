@@ -111,6 +111,7 @@
     flex-direction: column;
     width: 90%;
     height: 185px;
+    background: white;
   }
 
   .job-content {
@@ -142,5 +143,16 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 0px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1099px) {
+  .job {
+    column-gap: 20px;
+  }
+  .tag {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
   }
 }

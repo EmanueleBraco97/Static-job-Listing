@@ -5,6 +5,7 @@ main {
 
 @media (min-width: 300px) and (max-width: 768px) {
   main {
+    background-color: #eef6f6;
     padding: 0px;
     padding-top: 90px;
   }

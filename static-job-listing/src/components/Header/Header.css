@@ -83,3 +83,10 @@
     margin-right: 0px;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1099px) {
+  .search {
+    width: 535px;
+    left: 117px;
+  }
+}
