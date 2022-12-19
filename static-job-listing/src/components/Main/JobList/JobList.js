@@ -26,6 +26,7 @@ function Jobs() {
         setNewData(Data);
       }
     };
+    console.log(Data);
     FilteredData();
   }, [filterKeyword, Data]);
 

@@ -20,6 +20,7 @@ const Job = ({
 }) => {
   const { AddKeyword } = useContext(JobContext);
   const tags = [role, level, ...languages, ...tools];
+
   return (
     <>
       <div className={`job ${New && featured ? "job-active" : ""}`} key={id}>
@@ -50,19 +51,17 @@ const Job = ({
           </div>
         </div>
         <div className="divisor"></div>
-        <div className="tag">
+        <ul className="tag">
           {tags.map((tag, id) => {
             return (
-              <button
-                className="tag-key"
-                key={id}
-                onClick={() => AddKeyword(tag)}
-              >
-                {tag}{" "}
-              </button>
+              <li key={id}>
+                <button className="tag-key" onClick={() => AddKeyword(tag)}>
+                  {tag}{" "}
+                </button>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </>
   );

@@ -10,11 +10,11 @@ const Header = () => {
     useContext(JobContext);
   return (
     <header className="header">
-      <div className={`${filterKeyword.length > 0 ? "search" : null}`}>
-        <div className="filter_tags">
+      <nav className={`${filterKeyword.length > 0 ? "search" : null}`}>
+        <ul className="filter_tags">
           {filterKeyword.map((tag, id) => {
             return (
-              <div className="filter" key={id}>
+              <li className="filter" key={id}>
                 <button className="tag-key">{tag}</button>
                 <div className="structure-remove-icon">
                   <img
@@ -24,16 +24,16 @@ const Header = () => {
                     onClick={() => RemoveKeyword(tag)}
                   />
                 </div>
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ul>
         {filterKeyword.length > 0 && (
           <button className="clear" onClick={ClearKeywords}>
             Clear
           </button>
         )}
-      </div>
+      </nav>
     </header>
   );
 };

@@ -28,6 +28,7 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+  padding: 0;
 }
 
 .filter {
@@ -86,7 +87,7 @@
 
 @media (min-width: 769px) and (max-width: 1099px) {
   .search {
-    width: 535px;
-    left: 117px;
+    width: 693px;
+    left: 135px;
   }
 }
