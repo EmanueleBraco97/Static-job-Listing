@@ -91,14 +91,14 @@
 
 @media (min-width: 769px) and (max-width: 1099px) {
   .search {
-    width: 693px;
+    width: 65%;
     left: 135px;
   }
 }
 
 @media (min-width: 1099px) and (max-width: 1250px) {
   .search {
-    width: 798px;
+    width: 65%;
     left: 150px;
   }
 }
