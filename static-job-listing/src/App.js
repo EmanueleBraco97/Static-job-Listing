@@ -1,16 +1,16 @@
 import "./App.css";
 
-import JobContext from "./context/JobContext";
+import Context from "./context/Context";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 
 function App() {
   return (
     <div className="App">
-      <JobContext>
+      <Context>
         <Header />
         <Main />
-      </JobContext>
+      </Context>
     </div>
   );
 }

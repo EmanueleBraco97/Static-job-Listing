@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext } from "react";
 import Job from "../Job/Job";
-import { JobContext } from "../../../context/JobContext";
+import { Context } from "../../../context/Context";
 
 import "./JobList.css";
 
 function Jobs() {
-  const { Data, filterKeyword } = useContext(JobContext);
+  const { Data, filterKeyword } = useContext(Context);
   const [newData, setNewData] = useState([]);
 
   useEffect(() => {
@@ -26,7 +26,6 @@ function Jobs() {
         setNewData(Data);
       }
     };
-    console.log(Data);
     FilteredData();
   }, [filterKeyword, Data]);
 

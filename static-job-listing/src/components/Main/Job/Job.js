@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { JobContext } from "../../../context/JobContext";
+import { Context } from "../../../context/Context";
 
 import "./Job.css";
 
@@ -18,7 +18,7 @@ const Job = ({
   languages,
   tools,
 }) => {
-  const { AddKeyword } = useContext(JobContext);
+  const { AddKeyword } = useContext(Context);
   const tags = [role, level, ...languages, ...tools];
 
   return (

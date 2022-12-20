@@ -27,6 +27,7 @@
   margin-left: 50px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   column-gap: 20px;
   padding: 0;
 }
@@ -73,7 +74,10 @@
     position: absolute;
     top: 90px;
     left: 20px;
-    width: 85%;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .filter_tags {
@@ -89,5 +93,12 @@
   .search {
     width: 693px;
     left: 135px;
+  }
+}
+
+@media (min-width: 1099px) and (max-width: 1250px) {
+  .search {
+    width: 798px;
+    left: 150px;
   }
 }

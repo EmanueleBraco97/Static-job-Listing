@@ -1,13 +1,12 @@
 import { useContext } from "react";
-import { JobContext } from "../../context/JobContext";
+import { Context } from "../../context/Context";
 
 import iconRemove from "../../images/icon-remove.svg";
 
 import "./Header.css";
 
 const Header = () => {
-  const { filterKeyword, RemoveKeyword, ClearKeywords } =
-    useContext(JobContext);
+  const { filterKeyword, RemoveKeyword, ClearKeywords } = useContext(Context);
   return (
     <header className="header">
       <nav className={`${filterKeyword.length > 0 ? "search" : null}`}>
